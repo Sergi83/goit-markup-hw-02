@@ -1,0 +1,72 @@
+/* ====== VARIABLES ====== */
+/* :root - identical to <html> */
+:root {
+    --primary-accent-color: #4D5AE5;
+    --secondary-accent-color: #404BBF;
+    --primary-light-color: #FFFFFF;
+    --secondary-light-color: #F4F4FD;
+    --primary-gray-color: #E7E9FC;
+    --primary-dark-color: #434455;
+    --secondary-dark-color: #2E2F42;
+    --primary-font: "Roboto", sans-serif;
+    --secondary-font: "Raleway", sans-serif;
+}
+/* ====== /VARIABLES ====== */
+
+/* ====== cкидання стилів ====== */
+
+.list {
+    list-style-type: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+
+/* наслідування (inheritance), як мінімум ff, інше треба дивитись по макету */
+body {
+    font-family: var(--primary-font);
+    color: var(--primary-light-color);
+    line-height: 1.5;
+    letter-spacing: 2%;
+
+}
+
+/* ====== /cкидання стилів ====== */
+
+/* ====== PAGE HEADER ====== */
+
+.logo {
+    font-family: "Raleway" sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.17;
+    letter-spacing: 3%;
+    text-transform: uppercase;
+}
+
+.logo span {
+    color: var(--primary-accent-color);
+}
+
+.menu-link {
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--secondary-dark-color);
+}
+
+.menu-link:hover,
+.menu-link:focus {
+    color: var(--secondary-accent-color);
+}
+
+/* ====== /PAGE HEADER ====== */
+
+
