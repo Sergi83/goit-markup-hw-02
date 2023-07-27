@@ -3,11 +3,14 @@
 :root {
     --primary-accent-color: #4D5AE5;
     --secondary-accent-color: #404BBF;
+    --accent-light-color: #E7E9FC;
     --primary-light-color: #FFFFFF;
     --secondary-light-color: #F4F4FD;
-    --primary-gray-color: #E7E9FC;
     --primary-dark-color: #434455;
     --secondary-dark-color: #2E2F42;
+    --success-message-color: #31D0AA;
+    --primary-grey-color: #8E8F99;
+    --modal-bg-color: #FCFCFC;
     --primary-font: "Roboto", sans-serif;
     --secondary-font: "Raleway", sans-serif;
 }
@@ -15,26 +18,26 @@
 
 /* ====== cкидання стилів ====== */
 
-.list {
-    list-style-type: none;
-}
+.list { list-style-type: none; }
 
-.link {
-    text-decoration: none;
-}
+.link { text-decoration: none; }
 
-button {
-    cursor: pointer;
-}
+.link:hover,
+.link:focus,
+.link:active { color: var(--secondary-accent-color); }
+
+.link:active { text-decoration: underline; }
+
+button { cursor: pointer; }
 
 
-
-/* наслідування (inheritance), як мінімум ff, інше треба дивитись по макету */
+/* наслідування (inheritance) */
 body {
     font-family: var(--primary-font);
-    color: var(--primary-light-color);
+    font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 2%;
+    letter-spacing: 0.02em;
+    color: var(--primary-dark-color);
 
 }
 
@@ -42,18 +45,17 @@ body {
 
 /* ====== PAGE HEADER ====== */
 
-.logo {
-    font-family: "Raleway" sans-serif;
+.page-header-logo {
+    font-family: var(--secondary-font);
     font-size: 18px;
     font-weight: 800;
     line-height: 1.17;
-    letter-spacing: 3%;
+    letter-spacing: 0.03em;
+    color: var(--secondary-dark-color);
     text-transform: uppercase;
 }
 
-.logo span {
-    color: var(--primary-accent-color);
-}
+.page-header-logo>span { color: var(--primary-accent-color); }
 
 .menu-link {
     font-family: sans-serif;
@@ -62,11 +64,12 @@ body {
     color: var(--secondary-dark-color);
 }
 
-.menu-link:hover,
-.menu-link:focus {
-    color: var(--secondary-accent-color);
-}
+.address-list-link { color: var(--primary-dark-color); }
 
 /* ====== /PAGE HEADER ====== */
 
+/* ====== PAGE HERO ====== */
 
+
+/* ====== /PAGE HERO ====== */
+/* background-color: var(--primary-accent-color); */
