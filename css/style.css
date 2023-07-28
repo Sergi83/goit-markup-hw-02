@@ -39,10 +39,6 @@
   text-decoration: underline;
 }
 
-/* button {
-  cursor: pointer;
-} */
-
 /* наслідування (inheritance) */
 body {
   margin: 0;
@@ -109,11 +105,12 @@ body {
   line-height: 1.5;
   letter-spacing: var(--button-letter-spacing);
   color: var(--primary-light-color);
+  cursor: pointer;
 }
 
-.hero-button:hover {
+.hero-button:hover,
+.hero-button:focus {
   background-color: var(--secondary-accent-color);
-  cursor: pointer;
 }
 
 /* ====== /HERO ====== */
@@ -139,25 +136,23 @@ body {
 }
 
 /* ====== /SERVICES ====== */
-
 /* ====== TEAM ====== */
 
 .team {
   text-align: center;
   background-color: var(--secondary-light-color);
-  letter-spacing: var(--primary-letter-spacing);
 }
 
 .team-header,
 .team-item-header {
   color: var(--secondary-dark-color);
+  letter-spacing: var(--primary-letter-spacing);
   text-transform: capitalize;
 }
 
 .team-header {
   font-size: 36px;
   line-height: 1.11;
-  /* letter-spacing: var(--primary-letter-spacing); */
 }
 
 .team-item {
@@ -213,7 +208,6 @@ body {
   color: var(--primary-dark-color);
 }
 /* ====== /PORTFOLIO PAGE ====== */
-
 /* ====== FOOTER ====== */
 
 .footer {
